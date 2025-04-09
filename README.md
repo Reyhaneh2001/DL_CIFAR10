@@ -1,31 +1,24 @@
-Deep Learning Model for CIFAR-10 Classification
+# CIFAR-10 Image Classification with Deep Learning
 
-This project implements a deep learning pipeline for classifying images from the CIFAR-10 dataset. The project includes data preprocessing, a baseline CNN model, hyperparameter tuning using Keras Tuner, and an advanced Wide & Deep model.
+## Project Overview
+In this project, we will tackle the image classification task on the **CIFAR-10** dataset, which contains 60,000 32x32 color images across 10 different classes, with 6,000 images per class. Our goal is to build a deep learning model capable of classifying these images accurately using **Convolutional Neural Networks (CNNs)**.
 
-Features:
+## Approach
+The approach involves several key steps:
 
-Data Preprocessing: Normalization and one-hot encoding.
+1. **Data Preprocessing**:
+    - Load the CIFAR-10 dataset.
+    - Split the data into training, validation, and test sets.
+    - Apply one-hot encoding to the labels for categorical classification.
 
-Baseline CNN Model: A simple convolutional neural network.
+2. **Model Construction**:
+    - Build a **basic CNN model** with multiple convolutional, pooling, and dense layers.
+    - Use **Keras Tuner** to perform hyperparameter optimization and tune the model architecture for better performance.
 
-Hyperparameter Tuning: Optimization of CNN architecture using Keras Tuner.
+3. **Model Evaluation**:
+    - Evaluate the performance of both the basic and the optimized models on the test set.
+    - Compute evaluation metrics such as **Accuracy**, **F1-Score**, and **ROC AUC**.
 
-Wide & Deep Model: A hybrid architecture combining wide and deep pathways.
+4. **Wide & Deep Network**:
+    - Explore a **Wide & Deep Network** model that combines wide and deep paths to improve feature extraction.
 
-Evaluation: Accuracy, F1-score, and ROC AUC for model comparison.
-
-Results:
-
-The models are evaluated on accuracy, F1-score, and ROC AUC across training, validation, and test datasets.
-
-Models Implemented:
-
-Basic CNN Model
-
-Hyperparameter-Tuned CNN Model
-
-Wide & Deep Model
-
-Dataset:
-
-CIFAR-10: 60,000 images in 10 classes (airplane, car, bird, etc.).
